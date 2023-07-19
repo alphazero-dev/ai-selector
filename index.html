@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seleção de Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .profile {
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+        .profile img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        .profile-name {
+            color: white;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 20px;
+            color: white;
+            background-color: #6b38d1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #4e2a9f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <a href="https://www.example.com/profile1">
+                <img src="https://via.placeholder.com/150x200.png?text=Perfil+1" alt="Perfil 1">
+                <div class="profile-name">Perfil 1</div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://www.example.com/profile2">
+                <img src="https://via.placeholder.com/150x200.png?text=Perfil+2" alt="Perfil 2">
+                <div class="profile-name">Perfil 2</div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://www.example.com/profile3">
+                <img src="https://via.placeholder.com/150x200.png?text=Perfil+3" alt="Perfil 3">
+                <div class="profile-name">Perfil 3</div>
+            </a>
+        </div>
+    </div>
+    <button class="button">Adicionar Perfil</button>
+</body>
+</html>

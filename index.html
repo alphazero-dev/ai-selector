@@ -49,10 +49,33 @@
         .profile:hover {
             transform: scale(1.05);
         }
+
+                .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            fill: white;
+        }
     </style>
 </head>
 
 <body>
+    <a href="/" class="back-button">
+        <img src="/images/back.svg" class="back-icon" alt="Voltar">
+        Voltar
+    </a>
     <div class="profiles-container">
         <a href="/aurora" class="profile">
             <img src="./img/aurora.jpg" alt="Aurora">

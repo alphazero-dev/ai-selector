@@ -1,70 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleção de Perfil</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #141414;
-        }
-        .container {
+            margin: 0;
+            padding: 0;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            margin-top: 50px;
+            align-items: center;
+            height: 100vh;
+            background-color: #6b3e99; /* Cor de fundo roxa */
         }
+
+        .profiles-container {
+            display: flex;
+            gap: 20px;
+        }
+
         .profile {
             width: 150px;
-            margin: 10px;
-            text-align: center;
-        }
-        .profile img {
-            width: 100%;
-            border-radius: 4px;
-        }
-        .profile-name {
+            height: 200px;
+            background-color: #8b5fa3; /* Cor de fundo roxa mais clara */
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             color: white;
-            font-size: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            font-size: 16px;
             margin-top: 10px;
         }
-        .button {
-            display: block;
-            width: 100%;
-            padding: 10px 20px;
-            margin-top: 20px;
-            font-size: 20px;
-            color: white;
-            background-color: #6b38d1;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: #4e2a9f;
+
+        .profile:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="profile">
-            <a href="https://www.example.com/profile1">
-                <img src="https://via.placeholder.com/150x200.png?text=Perfil+1" alt="Perfil 1">
-                <div class="profile-name">Perfil 1</div>
-            </a>
-        </div>
-        <div class="profile">
-            <a href="https://www.example.com/profile2">
-                <img src="https://via.placeholder.com/150x200.png?text=Perfil+2" alt="Perfil 2">
-                <div class="profile-name">Perfil 2</div>
-            </a>
-        </div>
-        <div class="profile">
-            <a href="https://www.example.com/profile3">
-                <img src="https://via.placeholder.com/150x200.png?text=Perfil+3" alt="Perfil 3">
-                <div class="profile-name">Perfil 3</div>
-            </a>
-        </div>
+    <div class="profiles-container">
+        <a href="https://brauxx.github.io/aurora" class="profile">
+            <img src="https://placekitten.com/100/100" alt="Aurora">
+            <span class="profile-name">Aurora</span>
+        </a>
+
+        <a href="https://brauxx.github.io/stella" class="profile">
+            <img src="https://placekitten.com/100/100" alt="Stella">
+            <span class="profile-name">Stella</span>
+        </a>
+
+        <a href="https://brauxx.github.io/nyx" class="profile">
+            <img src="https://placekitten.com/100/100" alt="Nyx">
+            <span class="profile-name">Nyx</span>
+        </a>
     </div>
-    <button class="button">Adicionar Perfil</button>
 </body>
+
 </html>

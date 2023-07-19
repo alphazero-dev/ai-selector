@@ -10,10 +10,20 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
         }
 
         .profiles-container {
@@ -50,7 +60,7 @@
             transform: scale(1.05);
         }
 
-                .back-button {
+        .back-button {
             position: absolute;
             top: 10px;
             left: 10px;
@@ -76,6 +86,7 @@
         <img src="/images/back.svg" class="back-icon" alt="Voltar">
         Voltar
     </a>
+    <h1>Escolha um Perfil</h1>
     <div class="profiles-container">
         <a href="/aurora" class="profile">
             <img src="./img/aurora.jpg" alt="Aurora">

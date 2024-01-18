@@ -89,11 +89,6 @@
             fill: white;
         }
 
-    .starish {
-        position: absolute;
-        z-index: -1;
-    }
-
         @media (max-width: 600px) {
     .profiles-container {
         display: grid;
@@ -112,11 +107,9 @@
 </head>
 
 <body>
-    <div class="starish">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-    </div>
+    <video autoplay muted loop id="myVideo">
+      <source src="media/background.mp4" type="video/mp4">
+    </video>
     <div class="main-container">
     <a href="/" class="back-button">
         <img src="/images/back.svg" class="back-icon" alt="Voltar">
@@ -125,17 +118,17 @@
     <h1>Escolha um Perfil</h1>
     <div class="profiles-container">
         <a href="/aurora" class="profile">
-            <img src="./img/aurora.jpg" alt="Aurora">
+            <img src="./media/aurora.jpg" alt="Aurora">
             <span class="profile-name">Aurora</span>
         </a>
 
         <a href="/stella" class="profile">
-            <img src="./img/stella.jpg" alt="Stella">
+            <img src="./media/stella.jpg" alt="Stella">
             <span class="profile-name">Stella</span>
         </a>
 
         <a href="/nyx" class="profile">
-            <img src="./img/nyx.jpg" alt="Nyx">
+            <img src="./media/nyx.jpg" alt="Nyx">
             <span class="profile-name">Nyx</span>
         </a>
     </div>

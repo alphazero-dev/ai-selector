@@ -4,6 +4,10 @@ html {
 	 overflow: hidden;
 }
 
+body {
+	background: url("https://i.imgur.com/M5iNocO.jpg");
+} 
+
 #backgroundImage {
 	position: fixed;
 	right: 0;

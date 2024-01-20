@@ -6,6 +6,7 @@ html {
 
 body {
 	background-image: url("https://i.imgur.com/M5iNocO.jpg");
+	background-size: cover;
 } 
 
  #title {

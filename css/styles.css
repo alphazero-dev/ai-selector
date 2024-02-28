@@ -8,7 +8,8 @@ html {
 }
 
 body {
-	background-image: url("https://i.imgur.com/M5iNocO.jpg");
+	background-image: radial-gradient(500px 200px at 50% 0, #131f33 20%, rgba(19, 30, 49, 0) 100%);
+  background: rgb(16, 21, 29);
 	background-size: cover;
 	overflow-y: auto;
 } 

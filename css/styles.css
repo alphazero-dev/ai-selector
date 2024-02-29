@@ -8,8 +8,8 @@ html {
 }
 
 body {
-	background-image: radial-gradient(500px 200px at 50% 0, #131f33 20%, rgba(19, 30, 49, 0) 100%);
   background: rgb(16, 21, 29);
+	background-image: radial-gradient(500px 200px at 50% 0, #131f33 20%, rgba(19, 30, 49, 0) 100%);
 	background-size: cover;
 	overflow-y: auto;
 } 
@@ -90,25 +90,6 @@ h1 {
 
 .profile:hover {
     transform: scale(1.05);
-}
-
-.back-button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.back-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    fill: white;
 }
 
 @media (max-width: 600px) {
